@@ -1,0 +1,163 @@
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>IOU</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet"> 
+		<link rel="Stylesheet" href="css/loginDialog.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/nebPay.js"></script>
+		<script type="text/javascript" src="js/nebulas.js"></script>
+	</head>
+
+	<body class="no-trans">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- logo 
+							<div class="logo smooth-scroll">
+								<a href="#banner"><img id="logo" src="images/logo.png" alt="Worthy"></a>
+							</div>
+							-->
+
+							<!-- name-and-slogan -->
+							<div class="logo-section smooth-scroll">
+								<div class="brand"><a href="#banner">B<font size="6">&</font>R Studio</a></div>								
+							</div>
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start --> 
+						<div class="header-right">
+
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
+
+								<!-- navbar start --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li><a href="index.html">首页</a></li>
+												<li><a href="myaim.html">我的欠条</a></li>
+												<li class="active"><a href="publicboard.html">公开信息</a></li>
+												<li><a href="rules.html">使用说明</a></li>
+																		
+												<li><a href="https://github.com/mjqin/NebulasIOU/">Github</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+
+
+		<!-- banner start --> 
+
+		<div id="banner" class="banner">
+			<div class="public-banner-caption">
+
+				<div class="container no-view public-caption-data"  data-animation-effect="fadeIn" id="publicItem">
+					<h1 id="services" class="title text-center">欠条恒久远，一个永流传~</h1>
+					<div class="space"></div>
+				
+								        <div class="scene" id="loading" align="center">
+  <svg version="1.1" id="dc-spinner" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width:"38"="" height:"38"="" viewBox="0 0 38 38" preserveAspectRatio="xMinYMin meet">
+  <text x="14" y="21" font-family="Monaco" font-size="2px" style="letter-spacing:0.6" fill="white">正在加载
+     <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"></animate>
+  </text>
+  <path fill="#373a42" d="M20,35c-8.271,0-15-6.729-15-15S11.729,5,20,5s15,6.729,15,15S28.271,35,20,35z M20,5.203
+    C11.841,5.203,5.203,11.841,5.203,20c0,8.159,6.638,14.797,14.797,14.797S34.797,28.159,34.797,20
+    C34.797,11.841,28.159,5.203,20,5.203z">
+  </path>
+
+  <path fill="#373a42" d="M20,33.125c-7.237,0-13.125-5.888-13.125-13.125S12.763,6.875,20,6.875S33.125,12.763,33.125,20
+    S27.237,33.125,20,33.125z M20,7.078C12.875,7.078,7.078,12.875,7.078,20c0,7.125,5.797,12.922,12.922,12.922
+    S32.922,27.125,32.922,20C32.922,12.875,27.125,7.078,20,7.078z">
+  </path>
+
+  <path fill="#2AA198" stroke="#2AA198" stroke-width="0.6027" stroke-miterlimit="10" d="M5.203,20
+			c0-8.159,6.638-14.797,14.797-14.797V5C11.729,5,5,11.729,5,20s6.729,15,15,15v-0.203C11.841,34.797,5.203,28.159,5.203,20z" transform="rotate(358.225 20.0002 20.0002)">
+  <animatetransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" calcMode="spline" keySplines="0.4, 0, 0.2, 1" keyTimes="0;1" dur="2s" repeatCount="indefinite"></animatetransform>      
+   </path>
+
+  <path fill="#859900" stroke="#859900" stroke-width="0.2027" stroke-miterlimit="10" d="M7.078,20
+  c0-7.125,5.797-12.922,12.922-12.922V6.875C12.763,6.875,6.875,12.763,6.875,20S12.763,33.125,20,33.125v-0.203
+  C12.875,32.922,7.078,27.125,7.078,20z" transform="rotate(122.499 20 20)">
+   <animatetransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="1.8s" repeatCount="indefinite"></animatetransform>
+    </path>
+  </svg>
+</div>
+</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			
+			window.onload = searchPublicPlan;
+
+		</script>
+		
+
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	</body>
+</html>

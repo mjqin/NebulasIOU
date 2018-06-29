@@ -1,0 +1,119 @@
+﻿@charset "utf-8";
+.mask{margin:0;padding:0;border:none;width:100%;height:100%;background:#333;opacity:0.6;filter:alpha(opacity=60);z-index:9999;position:fixed;top:0;left:0;display:none;}
+#LoginBox {position:absolute;left:40%;top:35%;background:white;width:545px;height:225px;border:3px solid #444;border-radius:7px;z-index:10000;display:none;}
+#SearchBox{position:absolute;left:35%;top:30%;background:white;width:545px;height:220px;border:3px solid #444;border-radius:7px;z-index:10000;display:none;}
+.firstrow{background:#f7f7f7;padding:0px 20px;line-height:50px;height:50px;font-weight:bold;color:#666;font-size:20px;text-align: center;}
+.followrow{height:44px;line-height:63px;padding:0px 30px;font-size:larger;margin-top: 3%;margin-left: 8%;}
+.close_btn{font-family:arial;font-size:30px;font-weight:700;color:#999;text-decoration:none;float:right;padding-right:4px;}
+.inputBox{border:1px solid #c3c3c3;padding:1px 3px 6px 3px;border-radius:5px;margin-left:5px;}
+.text{outline:none;height:27px;width:59%;border:none;}
+.rowspace{ }
+#loginbtn{color:White;background:#1abc9c;text-decoration:none;padding:10px 70px;margin-left:100px;margin-top:40px;border-radius:5px;opacity:0.8;filter:alpha(opacity=80);}
+.warning{float:right;color:Red;text-decoration:none;font-size:20px;font-weight:bold;margin-right:20px;display:none;}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  background-color: #ff0000;
+ 
+  animation: rotateplane 1.2s infinite ease-in-out;
+
+   position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+ 
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+ 
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 600;
+          perspective: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scene svg {
+  width: 240px;
+  height: 240px;
+}
+
+
+.dc-logo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.dc-logo:hover svg {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: arrow-spin 2.5s 0s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: arrow-spin 2.5s 0s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+.dc-logo:hover:hover:before {
+  content: '\2764';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size: 10px;
+  color: #00fffe;
+  text-transform: uppercase;
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  white-space: nowrap;
+  z-index: 20px;
+  box-shadow: 0px 0px 4px #222;
+  background: rgba(0, 0, 0, 0.4);
+}
+.dc-logo:hover:hover:after {
+  content: 'Digital Craft';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size: 10px;
+  color: #6E6F71;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  white-space: nowrap;
+  z-index: 20px;
+  box-shadow: 0px 0px 4px #222;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: none;
+}
+
+@-webkit-keyframes arrow-spin {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes arrow-spin {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
